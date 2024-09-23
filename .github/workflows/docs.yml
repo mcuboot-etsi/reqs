@@ -30,7 +30,9 @@ jobs:
           strictdoc export .
           cp -r output/html /tmp/strictdoc/
           git fetch
+          rm -rf output/html
           git checkout gh-pages
+          
           cp -r /tmp/strictdoc/ docs/
           git add docs/
           git commit -m "Updated docs"

@@ -19,7 +19,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: sudo apt-get install --reinstall python3-pkg-resources
+      - run: |
+          pip install --force-reinstall -U setuptools
+          pip install --force-reinstall -U pip
 
       - run: pip install strictdoc
 

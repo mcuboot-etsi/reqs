@@ -1,0 +1,12 @@
+[DOCUMENT]
+TITLE: Documentation
+REQ_PREFIX: MCU-DOC-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: user_requirements.sgra
+
+[DOCUMENT_FROM_FILE]
+FILE: etsi_docs.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: doc_tools.sdoc

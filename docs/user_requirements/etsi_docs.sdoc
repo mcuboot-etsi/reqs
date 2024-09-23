@@ -1,0 +1,19 @@
+[DOCUMENT]
+TITLE: ETSI
+REQ_PREFIX: MCU-DOC-ETSI-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: user_requirements.sgra
+
+[REQUIREMENT]
+UID: MCU-DOC-ETSI-1
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Documentation
+TITLE: ETSI SDLC Artifacts
+STATEMENT: >>>
+The Project shall provide the Secure SDLC artifacts needed for ETSI EN 303 645 compliance certification.
+<<<
+USER_STORY: >>>
+As a Product Developer, I need the Project to be certifiable under ETSI 303645 so that I can use it for my ETSI 303645-compliant product.
+<<<

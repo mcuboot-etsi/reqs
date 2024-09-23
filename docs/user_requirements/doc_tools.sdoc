@@ -1,0 +1,46 @@
+[DOCUMENT]
+TITLE: Documentation Tools
+REQ_PREFIX: MCU-DOC-TOOLS-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: user_requirements.sgra
+
+[REQUIREMENT]
+UID: MCU-DOC-TOOLS-1
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Documentation
+TITLE: Strictdoc for Requirements
+STATEMENT: >>>
+The Project shall capture its requirements in Strictdoc.
+<<<
+
+[REQUIREMENT]
+UID: MCU-DOC-TOOLS-2
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Documentation
+TITLE: SDLC Artifacts in Zephyr Document Generation process
+STATEMENT: >>>
+Where possible, SDLC Artifacts shall be generated using Zephyr Document Generation processes
+<<<
+
+[REQUIREMENT]
+UID: MCU-DOC-TOOLS-4
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Artifacts
+TITLE: Artifacts in PDF Format
+STATEMENT: >>>
+The Project shall deliver SDLC artifacts in at least PDF format
+<<<
+
+[REQUIREMENT]
+UID: MCU-DOC-TOOLS-3
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Documentation
+TITLE: System Documentation in Zephyr Document Generation process
+STATEMENT: >>>
+Where possible, System Documentation shall be generated using Zephyr Document Generation processes
+<<<

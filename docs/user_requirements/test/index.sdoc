@@ -1,0 +1,16 @@
+[DOCUMENT]
+TITLE: Testing
+REQ_PREFIX: MCU-TST-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: user_requirements.sgra
+
+[REQUIREMENT]
+UID: MCU-TST-1
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Testing
+TITLE: Ztest
+STATEMENT: >>>
+The Project shall use the "ztest" framework
+<<<

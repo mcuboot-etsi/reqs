@@ -29,6 +29,7 @@ jobs:
         run: |
           strictdoc export .
           cp -r output/html /tmp/strictdoc/
+          git fetch
           git checkout gh-pages
           cp -r /tmp/strictdoc/ .
           git add .

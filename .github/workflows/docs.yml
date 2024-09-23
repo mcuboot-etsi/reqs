@@ -1,0 +1,40 @@
+name: Docs
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: |
+          pip install --force-reinstall -U setuptools
+          pip install --force-reinstall -U pip
+
+      - run: pip install strictdoc
+
+      - if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+        run: |
+          strictdoc export .
+          cp -r output/html /tmp/strictdoc/
+          git fetch
+          rm -rf output/html
+          git checkout gh-pages
+          
+          cp -r /tmp/strictdoc/ docs/
+          touch docs/.nojekyll
+          git add docs/
+          git commit -m "Updated docs"
+          git push

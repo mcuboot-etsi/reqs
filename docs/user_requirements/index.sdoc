@@ -1,0 +1,9 @@
+[DOCUMENT]
+TITLE: User Requirements
+REQ_PREFIX: USR-
+
+[DOCUMENT_FROM_FILE]
+FILE: doc/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: test/index.sdoc

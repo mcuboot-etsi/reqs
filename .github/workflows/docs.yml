@@ -20,15 +20,14 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-
       - run: pip install strictdoc
 
       - if: github.ref == 'refs/heads/sysrs' || startsWith(github.ref, 'refs/tags/v')
         run: |
           strictdoc export .
           cp output/html /tmp/strictdoc
-          git checkout -b gh-pages
+          git checkout gh-pages
           cp /tmp/strictdoc .
           git add .
           git commit -m "Updated docs"
+          git push

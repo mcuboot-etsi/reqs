@@ -31,7 +31,7 @@ jobs:
           cp -r output/html /tmp/strictdoc/
           git fetch
           git checkout gh-pages
-          cp -r /tmp/strictdoc/ .
-          git add .
+          cp -r /tmp/strictdoc/ docs/
+          git add docs/
           git commit -m "Updated docs"
           git push

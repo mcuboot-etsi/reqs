@@ -25,7 +25,7 @@ jobs:
 
       - run: pip install strictdoc
 
-      - if: github.ref == 'refs/heads/sysrs' || startsWith(github.ref, 'refs/tags/v')
+      - if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
         run: |
           strictdoc export .
           cp -r output/html /tmp/strictdoc/

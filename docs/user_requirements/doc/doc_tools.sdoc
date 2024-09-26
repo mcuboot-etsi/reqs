@@ -24,6 +24,9 @@ TITLE: SDLC Artifacts in Zephyr Document Generation process
 STATEMENT: >>>
 Where possible, SDLC Artifacts shall be generated using Zephyr Document Generation processes
 <<<
+RELATIONS:
+- TYPE: File
+  VALUE: src/example.py
 
 [REQUIREMENT]
 UID: MCU-DOC-TOOLS-4

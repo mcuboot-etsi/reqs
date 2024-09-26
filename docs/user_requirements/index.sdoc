@@ -7,3 +7,6 @@ FILE: doc/index.sdoc
 
 [DOCUMENT_FROM_FILE]
 FILE: test/index.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: etsi/index.sdoc

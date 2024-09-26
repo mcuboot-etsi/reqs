@@ -1,0 +1,6 @@
+[DOCUMENT]
+TITLE: ETSI 303645 Regulations
+REQ_PREFIX: MCU-ETSI-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: user_requirements.sgra

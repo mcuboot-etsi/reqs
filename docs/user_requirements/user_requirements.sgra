@@ -25,3 +25,4 @@ ELEMENTS:
     REQUIRED: False
   RELATIONS:
   - TYPE: Parent
+  - TYPE: File
